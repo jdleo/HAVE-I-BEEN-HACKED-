@@ -16,6 +16,7 @@
 		0969416120BA050B000AE641 /* magnifying-glass.png in Resources */ = {isa = PBXBuildFile; fileRef = 0969416020BA050B000AE641 /* magnifying-glass.png */; };
 		0969416320BA06AD000AE641 /* lock-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0969416220BA06AD000AE641 /* lock-2.png */; };
 		0969416520BA0918000AE641 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0969416420BA0918000AE641 /* MainVC.swift */; };
+		0969416720BA14D8000AE641 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0969416620BA14D8000AE641 /* CardView.swift */; };
 		F7DF9B06AA002618B6FFFABD /* Pods_hacked.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E535BF0337309644974928D /* Pods_hacked.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		0969416020BA050B000AE641 /* magnifying-glass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "magnifying-glass.png"; sourceTree = "<group>"; };
 		0969416220BA06AD000AE641 /* lock-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lock-2.png"; sourceTree = "<group>"; };
 		0969416420BA0918000AE641 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		0969416620BA14D8000AE641 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		3E535BF0337309644974928D /* Pods_hacked.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hacked.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A0A53B7574C4DA6E0820910 /* Pods-hacked.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hacked.release.xcconfig"; path = "Pods/Target Support Files/Pods-hacked/Pods-hacked.release.xcconfig"; sourceTree = "<group>"; };
 		819EF0B5A919FB451AB2228C /* Pods-hacked.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hacked.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hacked/Pods-hacked.debug.xcconfig"; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				0943166C20B8BDD10077877F /* Assets.xcassets */,
 				0943166E20B8BDD10077877F /* LaunchScreen.storyboard */,
 				0943167120B8BDD10077877F /* Info.plist */,
+				0969416620BA14D8000AE641 /* CardView.swift */,
 			);
 			path = hacked;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 			files = (
 				0943166820B8BDD10077877F /* IntroVC.swift in Sources */,
 				0969416520BA0918000AE641 /* MainVC.swift in Sources */,
+				0969416720BA14D8000AE641 /* CardView.swift in Sources */,
 				0943166620B8BDD10077877F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

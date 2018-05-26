@@ -181,6 +181,29 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="tki-cc-Wze">
+                                        <rect key="frame" x="20" y="150" width="335" height="425"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NHz-6B-SfA" customClass="CardView" customModule="hacked" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="187.5"/>
+                                                <color key="backgroundColor" red="0.80784313725490198" green="0.43529411764705883" blue="0.65098039215686276" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zO4-8o-e26" customClass="CardView" customModule="hacked" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="237.5" width="335" height="187.5"/>
+                                                <color key="backgroundColor" red="0.80784313725490198" green="0.43529411764705883" blue="0.65098039215686276" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.77647058820000003" green="0.43529411759999997" blue="0.80784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -189,12 +212,16 @@
                                     <constraint firstAttribute="trailing" secondItem="wNP-sn-0dI" secondAttribute="trailing" id="5sz-qt-m00"/>
                                     <constraint firstAttribute="trailing" secondItem="Qcm-nE-klk" secondAttribute="trailing" id="5zL-oM-NrY"/>
                                     <constraint firstAttribute="bottom" secondItem="Qcm-nE-klk" secondAttribute="bottom" id="6fD-Ck-REi"/>
+                                    <constraint firstItem="wNP-sn-0dI" firstAttribute="top" secondItem="tki-cc-Wze" secondAttribute="bottom" constant="40" id="8Cp-HN-mbg"/>
+                                    <constraint firstItem="tki-cc-Wze" firstAttribute="top" secondItem="xco-f4-wuK" secondAttribute="bottom" constant="40" id="Egy-FJ-Jo1"/>
                                     <constraint firstItem="Qcm-nE-klk" firstAttribute="leading" secondItem="1yc-G4-5UK" secondAttribute="leading" id="LFn-Db-1w5"/>
                                     <constraint firstItem="Qcm-nE-klk" firstAttribute="top" secondItem="wNP-sn-0dI" secondAttribute="bottom" id="PmQ-ms-n5k"/>
+                                    <constraint firstAttribute="trailing" secondItem="tki-cc-Wze" secondAttribute="trailing" constant="20" id="Z7o-mx-Jiq"/>
                                     <constraint firstItem="xco-f4-wuK" firstAttribute="top" secondItem="6yf-IQ-Dj2" secondAttribute="bottom" constant="30" id="bxc-Ig-JmH"/>
                                     <constraint firstItem="6yf-IQ-Dj2" firstAttribute="top" secondItem="1yc-G4-5UK" secondAttribute="top" id="dEn-yh-QBk"/>
                                     <constraint firstItem="6yf-IQ-Dj2" firstAttribute="leading" secondItem="1yc-G4-5UK" secondAttribute="leading" id="rRj-Cm-Rff"/>
                                     <constraint firstItem="wNP-sn-0dI" firstAttribute="leading" secondItem="1yc-G4-5UK" secondAttribute="leading" id="sXw-h8-JmJ"/>
+                                    <constraint firstItem="tki-cc-Wze" firstAttribute="leading" secondItem="1yc-G4-5UK" secondAttribute="leading" constant="20" id="wqR-fz-trX"/>
                                 </constraints>
                             </view>
                         </subviews>
