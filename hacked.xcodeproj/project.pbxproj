@@ -12,6 +12,7 @@
 		0943166B20B8BDD10077877F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0943166920B8BDD10077877F /* Main.storyboard */; };
 		0943166D20B8BDD10077877F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0943166C20B8BDD10077877F /* Assets.xcassets */; };
 		0943167020B8BDD10077877F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0943166E20B8BDD10077877F /* LaunchScreen.storyboard */; };
+		0943167920B8BF080077877F /* kraken.png in Resources */ = {isa = PBXBuildFile; fileRef = 0943167820B8BF080077877F /* kraken.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		0943166C20B8BDD10077877F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0943166F20B8BDD10077877F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0943167120B8BDD10077877F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0943167820B8BF080077877F /* kraken.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kraken.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		0943166420B8BDD10077877F /* hacked */ = {
 			isa = PBXGroup;
 			children = (
+				0943167720B8BEF30077877F /* Assets */,
 				0943166520B8BDD10077877F /* AppDelegate.swift */,
 				0943166720B8BDD10077877F /* ViewController.swift */,
 				0943166920B8BDD10077877F /* Main.storyboard */,
@@ -62,6 +65,14 @@
 				0943167120B8BDD10077877F /* Info.plist */,
 			);
 			path = hacked;
+			sourceTree = "<group>";
+		};
+		0943167720B8BEF30077877F /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				0943167820B8BF080077877F /* kraken.png */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0943167020B8BDD10077877F /* LaunchScreen.storyboard in Resources */,
+				0943167920B8BF080077877F /* kraken.png in Resources */,
 				0943166D20B8BDD10077877F /* Assets.xcassets in Resources */,
 				0943166B20B8BDD10077877F /* Main.storyboard in Resources */,
 			);
@@ -277,11 +289,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QKVT7MD2SK;
 				INFOPLIST_FILE = hacked/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.John-Leonardo.hacked";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -292,11 +305,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QKVT7MD2SK;
 				INFOPLIST_FILE = hacked/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.John-Leonardo.hacked";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
