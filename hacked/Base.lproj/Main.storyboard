@@ -147,15 +147,51 @@
                                             <constraint firstItem="3Oa-YF-r0h" firstAttribute="centerY" secondItem="6yf-IQ-Dj2" secondAttribute="centerY" id="ure-M5-ZXe"/>
                                         </constraints>
                                     </view>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xco-f4-wuK" customClass="TweeActiveTextField" customModule="TweeTextField">
+                                        <rect key="frame" x="38" y="80" width="300" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Pjo-bw-qno"/>
+                                            <constraint firstAttribute="width" constant="300" id="frW-Eb-kmj"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.4039215686" green="0.2274509804" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" red="0.3803921569" green="0.3803921569" blue="0.3803921569" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="placeholderDuration">
+                                                <real key="value" value="0.29999999999999999"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="minimumPlaceholderFontSize">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="originalPlaceholderFontSize">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="tweePlaceholder" value="email"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="activeLineWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="animationDuration">
+                                                <real key="value" value="0.29999999999999999"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="activeLineColor">
+                                                <color key="value" red="0.1176470588" green="0.58431372550000005" blue="0.094117647060000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" red="0.77647058820000003" green="0.43529411759999997" blue="0.80784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="6yf-IQ-Dj2" secondAttribute="trailing" id="1g2-Tw-0ug"/>
+                                    <constraint firstItem="xco-f4-wuK" firstAttribute="centerX" secondItem="1yc-G4-5UK" secondAttribute="centerX" id="3kp-7h-myU"/>
                                     <constraint firstAttribute="trailing" secondItem="wNP-sn-0dI" secondAttribute="trailing" id="5sz-qt-m00"/>
                                     <constraint firstAttribute="trailing" secondItem="Qcm-nE-klk" secondAttribute="trailing" id="5zL-oM-NrY"/>
                                     <constraint firstAttribute="bottom" secondItem="Qcm-nE-klk" secondAttribute="bottom" id="6fD-Ck-REi"/>
                                     <constraint firstItem="Qcm-nE-klk" firstAttribute="leading" secondItem="1yc-G4-5UK" secondAttribute="leading" id="LFn-Db-1w5"/>
                                     <constraint firstItem="Qcm-nE-klk" firstAttribute="top" secondItem="wNP-sn-0dI" secondAttribute="bottom" id="PmQ-ms-n5k"/>
+                                    <constraint firstItem="xco-f4-wuK" firstAttribute="top" secondItem="6yf-IQ-Dj2" secondAttribute="bottom" constant="30" id="bxc-Ig-JmH"/>
                                     <constraint firstItem="6yf-IQ-Dj2" firstAttribute="top" secondItem="1yc-G4-5UK" secondAttribute="top" id="dEn-yh-QBk"/>
                                     <constraint firstItem="6yf-IQ-Dj2" firstAttribute="leading" secondItem="1yc-G4-5UK" secondAttribute="leading" id="rRj-Cm-Rff"/>
                                     <constraint firstItem="wNP-sn-0dI" firstAttribute="leading" secondItem="1yc-G4-5UK" secondAttribute="leading" id="sXw-h8-JmJ"/>
@@ -174,6 +210,7 @@
                     <connections>
                         <outlet property="bar1" destination="JdK-hv-zFF" id="mFm-0i-fNe"/>
                         <outlet property="bar2" destination="y1g-4o-4OM" id="5hh-Fg-k3B"/>
+                        <outlet property="textField" destination="xco-f4-wuK" id="BUF-QB-inH"/>
                         <outlet property="topView" destination="6yf-IQ-Dj2" id="A3Y-kl-5H0"/>
                     </connections>
                 </viewController>
