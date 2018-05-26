@@ -13,6 +13,7 @@ class MainVC: UIViewController {
     //outlets
     @IBOutlet weak var bar1: UIView!
     @IBOutlet weak var bar2: UIView!
+    @IBOutlet weak var topView: UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +21,19 @@ class MainVC: UIViewController {
         // Do any additional setup after loading the view.
         bar1.backgroundColor = UIColor(red:0.47, green:0.81, blue:0.44, alpha:1.0)
         bar2.backgroundColor = UIColor(red:0.81, green:0.44, blue:0.65, alpha:1.0)
+        
+        //give shadow to bottom of topView
+        let shadowPath = UIBezierPath()
+        shadowPath.move(to: CGPoint(x: topView.bounds.origin.x, y: topView.frame.size.height))
+        shadowPath.addLine(to: CGPoint(x: topView.bounds.width / 2, y: topView.bounds.height + 7.0))
+        shadowPath.addLine(to: CGPoint(x: topView.bounds.width, y: topView.bounds.height))
+        shadowPath.close()
+        
+        topView.layer.shadowColor = UIColor.darkGray.cgColor
+        topView.layer.shadowOpacity = 1
+        topView.layer.masksToBounds = false
+        topView.layer.shadowPath = shadowPath.cgPath
+        topView.layer.shadowRadius = 3
     }
 
     override func didReceiveMemoryWarning() {

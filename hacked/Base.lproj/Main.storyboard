@@ -121,14 +121,43 @@
                                             </view>
                                         </subviews>
                                     </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6yf-IQ-Dj2">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kraken.png" translatesAutoresizingMaskIntoConstraints="NO" id="3Oa-YF-r0h">
+                                                <rect key="frame" x="10" y="5" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="rMP-jL-D3x"/>
+                                                    <constraint firstAttribute="width" constant="40" id="y8c-8G-1Dr"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="have i been hacked?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uw0-lh-VYV">
+                                                <rect key="frame" x="92" y="12" width="190" height="27.5"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                                <color key="textColor" red="0.46666666670000001" green="0.80784313730000001" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.80784313725490198" green="0.43529411764705883" blue="0.65098039215686276" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="3Oa-YF-r0h" firstAttribute="leading" secondItem="6yf-IQ-Dj2" secondAttribute="leading" constant="10" id="JHv-xh-l6K"/>
+                                            <constraint firstItem="uw0-lh-VYV" firstAttribute="centerX" secondItem="6yf-IQ-Dj2" secondAttribute="centerX" id="NvA-jY-n28"/>
+                                            <constraint firstAttribute="height" constant="50" id="P7d-Rh-5OU"/>
+                                            <constraint firstItem="uw0-lh-VYV" firstAttribute="centerY" secondItem="6yf-IQ-Dj2" secondAttribute="centerY" id="hca-uv-Aw0"/>
+                                            <constraint firstItem="3Oa-YF-r0h" firstAttribute="centerY" secondItem="6yf-IQ-Dj2" secondAttribute="centerY" id="ure-M5-ZXe"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.77647058820000003" green="0.43529411759999997" blue="0.80784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="6yf-IQ-Dj2" secondAttribute="trailing" id="1g2-Tw-0ug"/>
                                     <constraint firstAttribute="trailing" secondItem="wNP-sn-0dI" secondAttribute="trailing" id="5sz-qt-m00"/>
                                     <constraint firstAttribute="trailing" secondItem="Qcm-nE-klk" secondAttribute="trailing" id="5zL-oM-NrY"/>
                                     <constraint firstAttribute="bottom" secondItem="Qcm-nE-klk" secondAttribute="bottom" id="6fD-Ck-REi"/>
                                     <constraint firstItem="Qcm-nE-klk" firstAttribute="leading" secondItem="1yc-G4-5UK" secondAttribute="leading" id="LFn-Db-1w5"/>
                                     <constraint firstItem="Qcm-nE-klk" firstAttribute="top" secondItem="wNP-sn-0dI" secondAttribute="bottom" id="PmQ-ms-n5k"/>
+                                    <constraint firstItem="6yf-IQ-Dj2" firstAttribute="top" secondItem="1yc-G4-5UK" secondAttribute="top" id="dEn-yh-QBk"/>
+                                    <constraint firstItem="6yf-IQ-Dj2" firstAttribute="leading" secondItem="1yc-G4-5UK" secondAttribute="leading" id="rRj-Cm-Rff"/>
                                     <constraint firstItem="wNP-sn-0dI" firstAttribute="leading" secondItem="1yc-G4-5UK" secondAttribute="leading" id="sXw-h8-JmJ"/>
                                 </constraints>
                             </view>
@@ -145,6 +174,7 @@
                     <connections>
                         <outlet property="bar1" destination="JdK-hv-zFF" id="mFm-0i-fNe"/>
                         <outlet property="bar2" destination="y1g-4o-4OM" id="5hh-Fg-k3B"/>
+                        <outlet property="topView" destination="6yf-IQ-Dj2" id="A3Y-kl-5H0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qcA-Wk-Ma0" userLabel="First Responder" sceneMemberID="firstResponder"/>
