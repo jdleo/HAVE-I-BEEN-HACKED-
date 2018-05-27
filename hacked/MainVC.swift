@@ -19,6 +19,9 @@ class MainVC: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //hide keybaord when tap anywhere in view
+        self.hideKeyboard()
 
         // Do any additional setup after loading the view.
         bar1.backgroundColor = UIColor(red:0.47, green:0.81, blue:0.44, alpha:1.0)
@@ -73,4 +76,21 @@ class MainVC: UIViewController, UITextFieldDelegate {
         return false
     }
     
+}
+
+extension UIViewController
+{
+    func hideKeyboard()
+    {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(
+            target: self,
+            action: #selector(UIViewController.dismissKeyboard))
+        
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard()
+    {
+        view.endEditing(true)
+    }
 }
